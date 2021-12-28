@@ -15,7 +15,7 @@ app.use("/", express.static(path.join(__dirname + '/public')))
 app.use(cookieParser())
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: 'mongodb://localhost/admin',
+        mongoUrl: 'mongodb+srv://guido:123@cluster0.rnmlp.mongodb.net/test',
         mongoOptions: advancedOptions
     }),
     secret:'123456',
